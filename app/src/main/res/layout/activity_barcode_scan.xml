@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BarcodeScan">
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:textSize="22sp"
+        android:text="No Barcode Detected"
+        android:id="@+id/txtBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <SurfaceView
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="200dp"
+        android:id="@+id/surfaceView"
+        android:layout_below="@+id/txtBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btnAction"
+        android:layout_alignParentBottom="true"
+        android:text="No CODE DETECTED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
